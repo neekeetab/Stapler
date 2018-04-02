@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HDx-x2-i70">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ajm-ay-Rzy">
+            <objects>
+                <viewController id="HDx-x2-i70" customClass="ViewController" customModule="StaplerDemo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4t2-df-mIC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V28-T9-M7J">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="HDx-x2-i70" id="Fz8-Y8-vGV"/>
+                                    <outlet property="delegate" destination="HDx-x2-i70" id="wDm-WC-r7m"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xdE-ix-Cxo">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="V28-T9-M7J" firstAttribute="leading" secondItem="Z4i-O8-XDH" secondAttribute="leading" id="8yV-Pr-k7T"/>
+                            <constraint firstItem="V28-T9-M7J" firstAttribute="top" secondItem="Z4i-O8-XDH" secondAttribute="top" id="M7W-PC-7lx"/>
+                            <constraint firstItem="xdE-ix-Cxo" firstAttribute="centerX" secondItem="4t2-df-mIC" secondAttribute="centerX" id="UFg-RV-Czn"/>
+                            <constraint firstItem="xdE-ix-Cxo" firstAttribute="centerY" secondItem="4t2-df-mIC" secondAttribute="centerY" id="rcH-5r-hEM"/>
+                            <constraint firstItem="Z4i-O8-XDH" firstAttribute="bottom" secondItem="V28-T9-M7J" secondAttribute="bottom" id="s7C-tr-pIv"/>
+                            <constraint firstItem="V28-T9-M7J" firstAttribute="trailing" secondItem="Z4i-O8-XDH" secondAttribute="trailing" id="seu-Q6-auC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z4i-O8-XDH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FKX-eh-0vK"/>
+                    <connections>
+                        <outlet property="initialLoadActivityIndicatorView" destination="xdE-ix-Cxo" id="bAX-G8-WRT"/>
+                        <outlet property="tableView" destination="V28-T9-M7J" id="2V1-Uc-umh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dKv-Eb-hhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626" y="-112"/>
+        </scene>
+    </scenes>
+</document>
