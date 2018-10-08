@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B8562B2E2063CD5E00150F18 /* Stapler.h in Headers */ = {isa = PBXBuildFile; fileRef = B8562B2B2063CD5E00150F18 /* Stapler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8562B2F2063CD5E00150F18 /* Stapler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8562B2C2063CD5E00150F18 /* Stapler.swift */; };
-		B8562B302063CD5E00150F18 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8562B2D2063CD5E00150F18 /* Info.plist */; };
 		B8562BD1206835AC00150F18 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8562BD2206835AC00150F18 /* Result.framework */; };
 		B8562BD3206835E500150F18 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8562BD4206835E500150F18 /* ReactiveSwift.framework */; };
 		B8562BD5206835E800150F18 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8562BD6206835E800150F18 /* ReactiveCocoa.framework */; };
@@ -146,7 +145,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8562B302063CD5E00150F18 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
