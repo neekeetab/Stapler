@@ -1,6 +1,5 @@
 import ReactiveSwift
 import ReactiveCocoa
-import enum Result.NoError
 
 /**
  Protocol to conform data structures representing paginated server responses to.
@@ -68,7 +67,7 @@ open class Stapler<Response: PaginatedResponse, ResponseError: Error> {
      the first page with startInitialLoadingAction.errors if it's an initial
      load or refreshAction.errors if it's a load after refreshing.
      */
-    public let errors2ndPageAndLater: Signal<ResponseError, NoError>
+    public let errors2ndPageAndLater: Signal<ResponseError, Never>
     
     /**
      Loads next page if needed. Usually you should call this function when the
@@ -83,7 +82,7 @@ open class Stapler<Response: PaginatedResponse, ResponseError: Error> {
     
     // MARK: - Implementation
     
-    private let loadNextPageSignalObserver: Signal<(), NoError>.Observer
+    private let loadNextPageSignalObserver: Signal<(), Never>.Observer
     
     /**
      - parameters:
@@ -94,7 +93,7 @@ open class Stapler<Response: PaginatedResponse, ResponseError: Error> {
     public init(pageSize: UInt,
                 request: @escaping (_ offset: UInt, _ size: UInt) -> SignalProducer<Response, ResponseError>) {
         
-        let (loadNextPageSignal, loadNextPageSignalObserver) = Signal<(), NoError>.pipe()
+        let (loadNextPageSignal, loadNextPageSignalObserver) = Signal<(), Never>.pipe()
         self.loadNextPageSignalObserver = loadNextPageSignalObserver
         
         let items = MutableProperty<[Response.Item]>([])

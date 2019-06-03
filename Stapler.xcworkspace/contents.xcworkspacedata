@@ -8,9 +8,6 @@
       location = "container:Stapler.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Carthage/Checkouts/Result/Result.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Carthage/Checkouts/ReactiveSwift/ReactiveSwift.xcodeproj">
    </FileRef>
    <FileRef
