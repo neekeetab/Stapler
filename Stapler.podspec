@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Stapler'
-  s.version          = '0.1.0'
+  s.version          = '0.2'
   s.summary          = 'Pagination handling made easy'
  
   s.description      = <<-DESC
@@ -14,6 +14,6 @@ Stapler is a Swift micro framework for iOS that encapsulates all the logic for f
  
   s.ios.deployment_target = '8.0'
   s.source_files = 'Sources/*.{swift}'
-  s.dependency 'ReactiveCocoa', '~> 7.1'
+  s.dependency 'ReactiveCocoa'
  
 end
