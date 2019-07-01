@@ -10,7 +10,7 @@ No more reinventing the wheel – **Stapler** will save you a ton of time next t
 Note, that **Stapler** relies heavily on [ReactiveSwift][]. Also, you will most likely want to use [ReactiveCocoa][] for easy UI bindings. You're supposed to be familiar with both of these frameworks, albeit you can use your own reactive extensions instead of (or along with) ReactiveCocoa.
 
 
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](#carthage) [![CocoaPods compatible](https://img.shields.io/cocoapods/v/Stapler.svg?style=flat-square)](#cocoapods) ![GitHub release](https://img.shields.io/github/release/neekeetab/Stapler.svg?style=flat-square) ![Swift 4.0](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat-square) ![platforms](https://img.shields.io/badge/iOS-8.0+-lightgrey.svg?style=flat-square)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](#carthage) [![CocoaPods compatible](https://img.shields.io/cocoapods/v/Stapler.svg?style=flat-square)](#cocoapods) ![GitHub release](https://img.shields.io/github/release/neekeetab/Stapler.svg?style=flat-square) ![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat-square) ![platforms](https://img.shields.io/badge/iOS-8.0+-lightgrey.svg?style=flat-square)
 
 ## Installation
 
@@ -20,7 +20,7 @@ If you use [Carthage][] to manage your dependencies, simply add
 **Stapler** to your `Cartfile`:
 
 ```
-github "neekeetab/Stapler" ~> 0.1
+github "neekeetab/Stapler" ~> 0.2
 ```
 
 If you use Carthage to build your dependencies, make sure you have added `Stapler.framework`, `ReactiveSwift.framework`, `ReactiveCocoa.framework` and `Result.framework` to the "_Linked Frameworks and Libraries_" section of your target, and have them included in your Carthage framework copying build phase.
@@ -31,7 +31,7 @@ If you use [CocoaPods][] to manage your dependencies, simply add
 **Stapler** to your `Podfile`:
 
 ```
-pod 'Stapler', '~> 0.1'
+pod 'Stapler', '~> 0.2'
 ```
 
 #### Git submodule
