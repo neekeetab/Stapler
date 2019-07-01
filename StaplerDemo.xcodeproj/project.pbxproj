@@ -16,7 +16,6 @@
 		B8562BA120682F4500150F18 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8562BA020682F4500150F18 /* NetworkService.swift */; };
 		B8562C54206CE6B600150F18 /* Stapler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8562C2D20694C4200150F18 /* Stapler.framework */; };
 		B8562C55206CE6B600150F18 /* Stapler.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8562C2D20694C4200150F18 /* Stapler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B8562C56206CE6B600150F18 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8562C2F20694C4A00150F18 /* Result.framework */; };
 		B8562C57206CE6B600150F18 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8562C2F20694C4A00150F18 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B8562C58206CE6B600150F18 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8562C3120694C5600150F18 /* ReactiveSwift.framework */; };
 		B8562C59206CE6B600150F18 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8562C3120694C5600150F18 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -63,7 +62,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8562C54206CE6B600150F18 /* Stapler.framework in Frameworks */,
-				B8562C56206CE6B600150F18 /* Result.framework in Frameworks */,
 				B8562C58206CE6B600150F18 /* ReactiveSwift.framework in Frameworks */,
 				B8562C5A206CE6B600150F18 /* ReactiveCocoa.framework in Frameworks */,
 			);
